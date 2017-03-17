@@ -1,0 +1,11 @@
+h1 Phone-Normalizer
+
+form method="post"
+  input name="number" type="text" value=@number
+  input type="submit"
+
+- if @normalized
+  => @number
+  | is normalized to
+  strong< = @normalized
+
